@@ -1,22 +1,28 @@
-import React from "react";
-
+import React, { useState } from "react";
+import PropTypes from "prop-types";
 import "./Section.css";
 
-const Section = () => {
+const Section = ({ title }) => {
+  const [color, setcolor] = useState("");
+  const colorChange = () => {
+    setcolor("blue");
+  };
   return (
-    <div>
+    <div onScroll={colorChange}>
       <header id='header'>
         <div class='inner'>
           <a class='logo'>
-            <strong>Projection</strong> by TEMPLATED
+            <strong>{title}</strong>
           </a>
           <nav id='nav'>
             <a>Home</a>
-            <a>Generic</a>
-            <a>Elements</a>
+            <a>Book Online</a>
+            <a>About Us</a>
           </nav>
           <a href='#navPanel' class='navPanelToggle'>
-            <span class='fa fa-bars'></span>
+            <span class='fa fa-bars'>
+              <a></a>
+            </span>
           </a>
         </div>
       </header>
@@ -145,6 +151,14 @@ const Section = () => {
       </footer>
     </div>
   );
+};
+
+Section.propTypes = {
+  title: PropTypes.string.isRequired,
+};
+
+Section.defaultProps = {
+  title: "PARTYPIE",
 };
 
 export default Section;
