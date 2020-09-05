@@ -1,0 +1,11 @@
+.button {
+  text-decoration: none;
+  color: lightgreen;
+}
+.button:hover {
+  background-color: white;
+}
+.card {
+  border: lightgreen;
+  border-radius: 10px;
+}
