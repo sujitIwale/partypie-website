@@ -3,13 +3,13 @@ import logo from "./logo.gif";
 import "./Header.css";
 const Header = () => {
   return (
-    <div className='fixed-header bg-light-green'>
+    <div className='fixed-header'>
       <header id='header'>
         <div className='inner'>
           <p className='logo'>
             <img src={logo} alt='' width='60px' height='60px' />
           </p>
-          <nav id='nav' className='nav'>
+          <nav id='nav' className='nav f3'>
             <a href='/' className='link'>
               Home
             </a>

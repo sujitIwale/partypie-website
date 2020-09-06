@@ -1563,11 +1563,11 @@ button:disabled,
 
 #banner {
   padding: 8em 0 9em 0;
-  background-image: url(./background.gif);
+  background: url(background.gif) no-repeat center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
   text-align: center;
   position: relative;
 }

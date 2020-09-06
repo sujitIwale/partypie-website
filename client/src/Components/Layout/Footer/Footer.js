@@ -1,9 +1,10 @@
-import React from 'react'
+import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
-    return (
-        <div>
-            <footer id='footer'>
+  return (
+    <div>
+      <footer id='footer'>
         <div class='inner'>
           <h3>Get in touch</h3>
 
@@ -33,14 +34,15 @@ const Footer = () => {
           </form>
 
           <div class='copyright'>
-            &copy; Untitled. Design:{" "}
-            <a href='https://templated.co'>TEMPLATED</a>. Images:{" "}
-            <a href='https://unsplash.com'>Unsplash</a>.
+            <span className='icon pointer fa-instagram f2 ma3 instagram'></span>
+            <span className='icon pointer fa-facebook f2 ma3 facebook'></span>
+            <span className='icon pointer fa-twitter f2 ma3 twitter'></span>
+            <span className='icon pointer fa-envelope f2 ma3 envelope'></span>
           </div>
         </div>
       </footer>
-        </div>
-    )
-}
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;
