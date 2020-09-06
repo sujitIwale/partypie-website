@@ -1,37 +1,36 @@
 import React from "react";
+import logo from "./logo.gif";
 import PropTypes from "prop-types";
-import './Navbar.css'
 
-const Navbar = ({title}) => {
-  return(
-   <div className='navbar'>
-    <header id='header'>
-        <div class='inner'>
-          <a class='logo'>
-            <strong>{title}</strong>
-          </a>
+const Navbar = ({ title }) => {
+  return (
+    <div className='navbar'>
+      <header id='header'>
+        <div className='inner'>
+          <p className='logo'>
+            <img src={logo} alt={title} width='70px' height='70px' />
+          </p>
           <nav id='nav'>
-            <a>Home</a>
-            <a>Book Online</a>
-            <a>About Us</a>
+            <a href='/'>Home</a>
+            <a href='/'>Book Online</a>
+            <a href='/'>About Us</a>
           </nav>
-          <a href='#navPanel' class='navPanelToggle'>
-            <span class='fa fa-bars'>
-              <a></a>
+          <a href='#navPanel' className='navPanelToggle'>
+            <span className='fa fa-bars'>
+              <a href='/'>content</a>
             </span>
           </a>
         </div>
       </header>
-   </div>
-  )
-  };
-  Navbar.propTypes = {
-    title: PropTypes.string.isRequired,
-  };
-  
-  Navbar.defaultProps = {
-    title: "PARTYPIE",
-  };
-  
+    </div>
+  );
+};
+Navbar.propTypes = {
+  title: PropTypes.string.isRequired,
+};
+
+Navbar.defaultProps = {
+  title: "PARTYPIE",
+};
 
 export default Navbar;
