@@ -9,9 +9,7 @@ h1 {
 .fixed-header {
   position: fixed;
   color: orange !important;
-  background-color: rgb(252, 236, 236);
-
-  width: 100%;
+  width: 99%;
   height: 90px;
   z-index: 100 !important ;
 }

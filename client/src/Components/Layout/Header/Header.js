@@ -3,7 +3,7 @@ import logo from "./logo.gif";
 import "./Header.css";
 const Header = () => {
   return (
-    <div className='fixed-header'>
+    <div className='fixed-header bg-light-green'>
       <header id='header'>
         <div className='inner'>
           <p className='logo'>
@@ -21,8 +21,8 @@ const Header = () => {
             </a>
           </nav>
           <a href='/' className='navPanelToggle'>
-            <span className='fa fa-bars black'>
-              <a href='/'>content</a>
+            <span className='fa fa-bars'>
+              <a href='/'></a>
             </span>
           </a>
         </div>

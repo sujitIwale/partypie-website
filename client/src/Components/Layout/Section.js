@@ -37,7 +37,7 @@ const Section = ({ tagLine, service1, service2, service3 }) => {
           <footer>
             <a
               href='/'
-              className='button f6 dim br-pill bg-white ba bw1 ph3 pv2 mb2 dib dark-green'
+              className='button f4 br-pill bg-light-green ba bw1 ph3 pv2 mb2 dib white'
             >
               <strong>
                 <strong>Get Started With Our Services..</strong>{" "}
