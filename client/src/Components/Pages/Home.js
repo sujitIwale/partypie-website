@@ -4,6 +4,7 @@ import Header from "../Layout/Header/Header";
 import Navbar from "../Layout/Navbar/Navbar";
 import Section from "../Layout/Section";
 import About from "../Layout/About/About";
+import EnquiryForm from "../Layout/EnquiryForm/EnquiryForm";
 
 class Home extends Component {
   constructor(props) {
@@ -33,6 +34,7 @@ class Home extends Component {
           {this.state.scrollTop > 1 ? <Header /> : <Navbar />}
           <Section />
           <About />
+          <EnquiryForm />
           <Footer />
         </div>
       </div>
