@@ -1,9 +1,14 @@
 h1 {
   color: black;
   margin-left: 30px;
+
+}
+.header {
+  height: 20px !important;
 }
 .nav {
   color: white;
+ 
 }
 .nav:hover {
   color: black;
