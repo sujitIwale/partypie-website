@@ -10,12 +10,12 @@ const Enquiry = require("../models/Enquiries");
 
 router.post(
   "/",
-  [check("name", "Please Provide Your Name").not().isEmpty()],
+  // [check("name", "Please Provide Your Name").not().isEmpty()],
   async (req, res) => {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.status(400).json({ errors: errors.array() });
-    }
+    // const errors = validationResult(req);
+    // if (!errors.isEmpty()) {
+    //   return res.status(400).json({ errors: errors.array() });
+    // }
 
     const {
       name,
