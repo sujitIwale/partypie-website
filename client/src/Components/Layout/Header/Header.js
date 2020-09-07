@@ -9,7 +9,7 @@ const Header = () => {
           <p className='logo'>
             <img src={logo} alt='' width='60px' height='60px' />
           </p>
-          <nav id='nav' className='nav'>
+          <nav id='nav' className='nav f3'>
             <a href='/' className='link'>
               Home
             </a>
@@ -21,8 +21,8 @@ const Header = () => {
             </a>
           </nav>
           <a href='/' className='navPanelToggle'>
-            <span className='fa fa-bars black'>
-              <a href='/'>content</a>
+            <span className='fa fa-bars'>
+              <a href='/'></a>
             </span>
           </a>
         </div>

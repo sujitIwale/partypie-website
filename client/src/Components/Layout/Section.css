@@ -9,3 +9,6 @@
   border: lightgreen;
   border-radius: 10px;
 }
+#inner {
+  color: white !important;
+}

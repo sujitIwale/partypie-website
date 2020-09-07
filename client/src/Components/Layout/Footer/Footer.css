@@ -1,0 +1,26 @@
+.instagram,
+.twitter,
+.facebook,
+.envelope {
+  color: white;
+}
+
+.facebook:hover {
+  color: #3b5998;
+  transform: scale(1.4);
+}
+
+.twitter:hover {
+  color: #35bfe9;
+  transform: scale(1.4);
+}
+
+.instagram:hover {
+  color: #fb3958;
+  transform: scale(1.3);
+}
+
+.envelope:hover {
+  color: #d44638;
+  transform: scale(1.4);
+}

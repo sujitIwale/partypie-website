@@ -1,13 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap");
 body {
   margin: 0px;
-  font-family: -apple-system, BlinkMacSystemFont, "Syne", "Segoe UI", "Roboto",
-    "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Canveat", "Segoe UI",
+    "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+    "Helvetica Neue", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   top: 0;
   height: 0;
   overflow: hidden;
+  zoom: 90% !important;
 }
 
 code {
