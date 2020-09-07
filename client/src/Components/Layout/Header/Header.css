@@ -8,7 +8,9 @@ h1 {
 .nav:hover {
   color: black;
 }
-
+.logo { 
+  margin-top: 5px !important;
+}
 .fixed-header {
   position: fixed;
   background-color: #ee2e9f;
