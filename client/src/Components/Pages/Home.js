@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import Footer from "../Layout/Footer/Footer";
-import Header from "../Layout/Header/Header";
-import Navbar from "../Layout/Navbar/Navbar";
 import Section from "../Layout/Section/Section";
 import About from "../Layout/About/About";
 import EnquiryForm from "../Layout/EnquiryForm/EnquiryForm";
@@ -25,7 +23,6 @@ class Home extends Component {
     return (
       <div>
         <div>
-          {this.state.scrollTop > 80 ? <Header /> : <Navbar />}
           <Section />
           <EnquiryForm />
           <About />
