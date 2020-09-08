@@ -8,52 +8,18 @@ import "./Section.css";
 const Section = ({ tagLine, service1, service2, service3, service4 }) => {
   return (
     <div>
-      <section id='banner' style={{ zIndex: "1" }}>
-        <div className='inner'>
-          <header>
-            <h1>{tagLine}</h1>
-          </header>
-          <div className='para'>
-            <p>
-              partypie has specialized in event planning working hard for each
-              of my clients, helping them plan,& host their upcoming event free
-              of stress and with confidence. Whether planning a small event or
-              magnificent Wedding or an entertaining Corporate Event, get in
-              touch to learn more about my services.
-            </p>
+      <section style={{ zIndex: "1" }}>
+        <header class='bg-gold sans-serif'>
+          <div class='mw9 center pa4 pt5-ns ph7-l'>
+            <h3 class='f2 f1-m measure-narrow lh-title mv0'>
+              <span class=' lh-copy white pa1 tracked-tight'>{tagLine}</span>
+            </h3>
+            <h4 class='f3 fw1 georgia i'>
+              The definitive guide to the javascript tooling landscape in 2015.
+            </h4>
+            <h5 class='f6 ttu tracked black-80'>By Adam Morse</h5>
           </div>
-
-          {/* <div className='flex '>
-            <div>
-              <span className='icon fa-stopwatch'></span>
-              <h3>Aliquam</h3>
-              <p>Suspendisse amet ullamco</p>
-            </div>
-
-            <div>
-              <span className='icon fa-camera'></span>
-              <h3>Elementum</h3>
-              <p>ClassNameclassName aptent taciti ad litora</p>
-            </div>
-
-            <div>
-              <span className='icon fa-bug'></span>
-              <h3>Ultrices</h3>
-              <p>Nulla vitae mauris non felis</p>
-            </div>
-          </div> */}
-
-          <footer>
-            <a
-              href='/'
-              className='button f4 br-pill bg-light-green ba bw1 ph3 pv2 mb2 dib white'
-            >
-              <strong>
-                <strong>Get Started With Our Services..</strong>{" "}
-              </strong>
-            </a>
-          </footer>
-        </div>
+        </header>
       </section>
 
       <section id='three' className='wrapper align-center'>
@@ -137,7 +103,7 @@ Section.propTypes = {
 };
 
 Section.defaultProps = {
-  tagLine: "Make Your Special Memories Sweetest With Us...",
+  tagLine: "Make Your Memory Sweet...",
   service1: "Venue Setup",
   service3: "Special Arrangement",
   service4: "Chef At Home",

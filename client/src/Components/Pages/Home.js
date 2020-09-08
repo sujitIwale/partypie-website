@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Footer from "../Layout/Footer/Footer";
 import Header from "../Layout/Header/Header";
 import Navbar from "../Layout/Navbar/Navbar";
-import Section from "../Layout/Section";
+import Section from "../Layout/Section/Section";
 import About from "../Layout/About/About";
 import EnquiryForm from "../Layout/EnquiryForm/EnquiryForm";
 
@@ -15,6 +15,7 @@ class Home extends Component {
 
   onScroll = () => {
     const scrollTop = this.myRef.current.scrollTop;
+    console.log(scrollTop);
     this.setState({
       scrollTop: scrollTop,
     });
@@ -31,7 +32,7 @@ class Home extends Component {
         }}
       >
         <div>
-          {this.state.scrollTop > 1 ? <Header /> : <Navbar />}
+          {this.state.scrollTop > 80 ? <Header /> : <Navbar />}
           <Section />
           <About />
           <EnquiryForm />
