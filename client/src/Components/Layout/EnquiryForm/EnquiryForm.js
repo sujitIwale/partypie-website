@@ -1,44 +1,31 @@
-import React,{useState} from 'react';
-import axios from 'axios'
+import React,{useContext, useState} from 'react';
 import './EnquiryForm.css';
+import EnquiryContext from '../../../context/Enquiry/EnquiryContext';
 
 
 const EnquiryForm = () => {
+    const enquiryContext = useContext(EnquiryContext);
+
+    const {submitEnquiry} = enquiryContext;
+
     const [Enquiry, setEnquiry] = useState({
         name:'',
         email:'',
         phone:'',
-        date:'',
-        venue:'',
-        description:''
+        eventDate:'',
+        eventType:'abc',
+        eventDesc:'',
+        eventVenue:'',
     })
     const {name,email,phone,date,venue,description} = Enquiry;
     const onChange =(e) => {
        setEnquiry({...Enquiry, [e.target.name]:e.target.value})
     }
 
-    const onSubmit = async(e) => {
-       
+    const onSubmit = (e) => {
         e.preventDefault()
-        const enquiry = {
-            name:name,
-            email:email,
-            phone:phone,
-            eventDate:date,
-            eventType:'wedding',
-            eventDesc:description,
-            eventVenue:venue,
-        }
-        console.log(enquiry)
-        const config = {
-            headers:{
-                "Content-Type":"application/json"
-            }
-        }
-         const res = await axios.post('http://localhost:5000/api/addenquiries' , enquiry,config)
-         if (res) {
-             alert('enquiry send')
-         }
+
+        submitEnquiry(Enquiry)
          
     }
     return (
@@ -59,7 +46,7 @@ const EnquiryForm = () => {
 
 				<label className="label-input100" for="email">Enter your email *</label>
 				<div className="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-					<input id="email" className="input100" type="text" name="email" placeholder="Eg. example@email.com" onChange={onChange}/>
+					<input id="email" className="input100" type="email" name="email" placeholder="Eg. example@email.com" onChange={onChange}/>
 					<span className="focus-input100"></span>
 				</div>
 
@@ -71,19 +58,19 @@ const EnquiryForm = () => {
 
                 <label className="label-input100" for="date">Event Date</label>
 				<div className="wrap-input100">
-					<input id="date" className="input100" type="date" name="date" placeholder={new Date()} onChange={onChange}/>
+					<input id="date" className="input100" type="date" name="eventDate" placeholder={new Date()} onChange={onChange}/>
 					<span className="focus-input100"></span>
 				</div>
                 
                 <label className="label-input100" for="Event Venue">Event Venue</label>
 				<div className="wrap-input100 rs1-wrap-input100 validate-input" data-validate="Type Venue">
-					<input id="Venue" className="input100" type="text" name="venue" placeholder="Enter Venue" onChange={onChange} />
+					<input id="Venue" className="input100" type="text" name="eventVenue" placeholder="Enter Venue" onChange={onChange} />
 					
 				</div>
 
 				<label className="label-input100" for="message">Event Discription </label>
 				<div className="wrap-input100 validate-input" data-validate = "Description is required">
-					<textarea id="description" className="input100" name="description" placeholder="Write a Event Description" onChange={onChange}></textarea>
+					<textarea id="description" className="input100" name="eventDesc" placeholder="Write a Event Description" onChange={onChange}></textarea>
 					<span className="focus-input100"></span>
 				</div>
 

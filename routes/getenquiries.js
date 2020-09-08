@@ -3,7 +3,7 @@ const router = express.Router();
 
 const Enquiry = require("../models/Enquiries");
 
-// @route   POST /api/enquiries
+// @route   POST /api/getenquiries
 // @desc    ENQUIRIES
 // @access  private
 
