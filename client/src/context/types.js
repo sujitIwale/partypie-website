@@ -1,0 +1,3 @@
+export const SUBMIT_ENQUIRY = 'SUBMIT_ENQUIRY';
+export const GET_ADMIN = 'GET_ADMIN';
+export const GET_ENQUIRIES = 'GET_ENQUIRIES';

@@ -23,19 +23,12 @@ class Home extends Component {
 
   render() {
     return (
-      <div
-        ref={this.myRef}
-        onScroll={this.onScroll}
-        style={{
-          height: "48rem",
-          overflow: "scroll",
-        }}
-      >
+      <div>
         <div>
           {this.state.scrollTop > 80 ? <Header /> : <Navbar />}
           <Section />
-          <About />
           <EnquiryForm />
+          <About />
           <Footer />
         </div>
       </div>
