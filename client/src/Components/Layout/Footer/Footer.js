@@ -5,10 +5,8 @@ const Footer = () => {
   return (
     <div>
       <footer id='footer'>
-        <div class='inner'>
-
-
-          <div class='copyright'>
+        <div className='inner'>
+          <div className='copyright'>
             <span className='icon pointer fa-instagram f2 ma3 instagram'></span>
             <span className='icon pointer fa-facebook f2 ma3 facebook'></span>
             <span className='icon pointer fa-twitter f2 ma3 twitter'></span>

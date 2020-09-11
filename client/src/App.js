@@ -1,4 +1,4 @@
-import React, { Component, Fragment, useContext, useState } from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Layout/Header/Header";
@@ -27,6 +27,7 @@ const App = () => {
           <div
             ref={myRef}
             onScroll={onScroll}
+            className='height'
             style={{
               height: "46rem",
               overflow: "scroll",

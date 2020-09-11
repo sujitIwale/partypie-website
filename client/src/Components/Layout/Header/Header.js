@@ -5,44 +5,48 @@ import PropTypes from "prop-types";
 
 const Header = ({ title }) => {
   return (
-    <div className='fixed-header '>
+    <div className='fixed-header shadow-4'>
       {" "}
-      <nav class='dt-l w-100 ph5-l '>
-        <div class='w-100 pt1 tc'>
-          <a class='tc' href=''>
+      <nav className='dt-l w-100 ph5-l '>
+        <div className='w-100 pt1 tc'>
+          <a className='tc' href='/'>
             <img src={logo} alt={title} width='150px' height='55px' />
           </a>
         </div>
-        <div class='db dtc-l v-mid w-100 w-75-l tc tr-l pt0 '>
+        <div className='db dtc-l v-mid w-100 w-75-l tc tr-l pt0 '>
           <a
-            class='link dim dark-gray f5 f4-l dib mr3 mr4-l'
+            className='link dim dark-gray f5 f4-l dib mr3 mr4-l'
             href='/'
             title='Home'
           >
             Home
           </a>
           <a
-            class='link dim dark-gray f5 f4-l dib mr3 mr4-l'
+            className='link dim dark-gray f5 f4-l dib mr3 mr4-l'
             href='/'
             title='How it Works'
           >
             How it Works
           </a>
           <a
-            class='link dim dark-gray f5 f4-l dib mr3 mr4-l'
+            className='link dim dark-gray f5 f4-l dib mr3 mr4-l'
             href='/'
             title='Blog'
           >
             Blog
           </a>
           <a
-            class='link dim dark-gray f5 f4-l dib mr3 mr4-l'
+            className='link dim dark-gray f5 f4-l dib mr3 mr4-l'
             href='/'
             title='Contact Us'
           >
             Contact Us
           </a>
-          <a class='link dim dark-gray f5 f4-l dib' href='/' title='About Us'>
+          <a
+            className='link dim dark-gray f5 f4-l dib'
+            href='/'
+            title='About Us'
+          >
             About Us
           </a>
         </div>

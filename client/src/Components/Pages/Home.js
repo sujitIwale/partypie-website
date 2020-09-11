@@ -3,10 +3,11 @@ import Footer from "../Layout/Footer/Footer";
 import Section from "../Layout/Section/Section";
 import About from "../Layout/About/About";
 import EnquiryForm from "../Layout/EnquiryForm/EnquiryForm";
+import ServicesWeProvide from "../Layout/ServicesWeProvide/ServicesWeProvide";
 
 class Home extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
     this.myRef = React.createRef();
     this.state = { scrollTop: 0 };
   }
@@ -22,12 +23,11 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <div>
-          <Section />
-          <EnquiryForm />
-          <About />
-          <Footer />
-        </div>
+        <Section />
+        <ServicesWeProvide />
+        <EnquiryForm />
+        <About />
+        <Footer />
       </div>
     );
   }
