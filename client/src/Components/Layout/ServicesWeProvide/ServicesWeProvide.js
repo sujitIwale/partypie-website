@@ -8,7 +8,7 @@ import "./Services.css";
 const ServicesWeProvide = ({ service1, service2, service3 }) => {
   return (
     <div
-      className='pa5-ns pt5 mt5 ma5-ns'
+      className='pa5-ns pt5 mt5 ma5-ns br4'
       style={{ backgroundColor: "whitesmoke" }}
     >
       <div>
@@ -36,7 +36,7 @@ const ServicesWeProvide = ({ service1, service2, service3 }) => {
           </div>
         </article>
         <article className='br3 ba dark-gray b--black-10 mv4 w-80 w-50-m w-25-l center'>
-          <h1 className='f2 f2-ns mv0 pt2 pr4 pl4 tc i service'>{service2}</h1>
+          <h1 className='f2 f2-ns mv0 pt2 pr4 pl4 pb tc i'>{service2}</h1>
           <div className='content_img'>
             <img src={pic2} className='db image br3' alt='#' />
             <div className='pa2 ph3-ns pb3-ns'>
