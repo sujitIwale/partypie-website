@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 const Header = ({ title }) => {
   return (
-    <div className='fixed-header'>
+    <div className='fixed-header '>
       {" "}
       <nav class='dt-l w-100 ph5-l '>
         <div class='w-100 pt1 tc'>
@@ -38,11 +38,11 @@ const Header = ({ title }) => {
           <a
             class='link dim dark-gray f5 f4-l dib mr3 mr4-l'
             href='/'
-            title='contactUs'
+            title='Contact Us'
           >
             Contact Us
           </a>
-          <a class='link dim dark-gray f5 f4-l dib' href='/' title='aboutUs'>
+          <a class='link dim dark-gray f5 f4-l dib' href='/' title='About Us'>
             About Us
           </a>
         </div>
