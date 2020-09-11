@@ -1,14 +1,17 @@
-.button {
-  text-decoration: none;
-  color: lightgreen;
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+.article {
+  font-family: "Lobster", sans-serif !important;
+  background-color: whitesmoke;
+  margin: 0px 30px 0px 30px;
+  border-radius: 1rem;
 }
-.button:hover {
-  background-color: white;
-}
-.card {
-  border: lightgreen;
-  border-radius: 10px;
-}
-#inner {
-  color: white !important;
+
+@media only screen and (max-width: 426px) {
+  .article {
+    margin: 0px;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+  }
 }

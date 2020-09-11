@@ -6,7 +6,7 @@ import "./Navbar.css";
 const Navbar = ({ title }) => {
   return (
     <div className='navbar'>
-      <nav class='dt-l w-100 ph5-l h7 bb b--black-10'>
+      <nav class='dt-l w-100 ph5-l h7'>
         <div class='w-100 pt1 tc'>
           <a class='tc' href=''>
             <img src={logo} alt={title} width='150px' height='55px' />
