@@ -1,3 +1,6 @@
+.footer {
+  background-color: white !important;
+}
 .instagram,
 .twitter,
 .facebook,
@@ -23,4 +26,13 @@
 .envelope:hover {
   color: #f01906;
   transform: scale(1.4);
+}
+
+@media only screen and (max-width: "426px") {
+  .instagram,
+  .twitter,
+  .facebook,
+  .envelope {
+    font-size: small;
+  }
 }

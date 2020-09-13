@@ -49,28 +49,6 @@ body {
   margin-right: auto;
 }
 
-.container.\31 25\25 {
-  width: 100%;
-  max-width: 100em;
-  min-width: 80em;
-}
-
-.container.\37 5\25 {
-  width: 60em;
-}
-
-.container.\35 0\25 {
-  width: 40em;
-}
-
-.container.\32 5\25 {
-  width: 20em;
-}
-
-.container {
-  width: 80em;
-}
-
 @media screen and (max-width: 1680px) {
   .container.\31 25\25 {
     width: 100%;
@@ -664,7 +642,6 @@ textarea {
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background: #6cc091;
   border-radius: 10px;
   border: none;
   border: solid 2px #8dcca9;
@@ -780,7 +757,6 @@ input[type="checkbox"] + label:before,
 input[type="radio"] + label:before {
   background: rgba(144, 144, 144, 0.075);
   border-radius: 0;
-  border: solid 1px #8dcca9;
   content: "";
   display: inline-block;
   height: 1.65em;
@@ -794,16 +770,8 @@ input[type="radio"] + label:before {
 
 input[type="checkbox"]:checked + label:before,
 input[type="radio"]:checked + label:before {
-  background: #6cc091;
-  border-color: #6cc091;
   color: #ffffff;
   content: "\f00c";
-}
-
-input[type="checkbox"]:focus + label:before,
-input[type="radio"]:focus + label:before {
-  border-color: #6cc091;
-  box-shadow: 0 0 0 1px #6cc091;
 }
 
 input[type="checkbox"] + label:before {
@@ -1309,14 +1277,6 @@ input[type="button"].special:hover,
 button.special:hover,
 .button.special:hover {
   background-color: #7ec89e;
-}
-
-input[type="submit"].special:active,
-input[type="reset"].special:active,
-input[type="button"].special:active,
-button.special:active,
-.button.special:active {
-  background-color: #5ab884;
 }
 
 input[type="submit"].disabled,

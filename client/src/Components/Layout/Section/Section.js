@@ -14,15 +14,15 @@ const Section = ({ tagLine }) => {
             <div className='w-100 w-40-ns pa0 order-1 order-1-ns tc'>
               <h1 className='f1 ma4-ns tc'>{tagLine}</h1>
               <br />
-              <h4 className='tc'>
+              <h4 className='tc ttc'>
                 <strong>
                   <b>PartyPie</b>
                 </strong>{" "}
-                is Specialized in Event Planning and Working hard for each of my
-                clients.
+                is Specialized in Event Planning and Working hard for each of
+                Our clients.
               </h4>
               <br />
-              <p className='f6 link pt3 bg-animate hover-bg-black hover-white w-30 br-pill ba bw1 ph3 pv2 mb2 dib near-black tc'>
+              <p className='f4 link pt3 bg-animate hover-bg-black hover-white w-30 br-pill ba bw1 ph3 pv2 mb2 dib near-black tc'>
                 Learn More.
               </p>
             </div>

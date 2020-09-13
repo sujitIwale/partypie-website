@@ -28,9 +28,12 @@ const ServicesWeProvide = ({ service1, service2, service3 }) => {
           <div className='content_img'>
             <img src={pic1} className='db image br3' alt='#' />
             <div className='pa2 ph3-ns pb3-ns'>
-              <p className='f4 black' style={{ fontFamily: "Dancing Script" }}>
-                If it fits, i sits burrow under covers. Destroy couch leave hair
-                everywhere, and touch water with paw then recoil in horror.
+              <p
+                className='f4 black ttc'
+                style={{ fontFamily: "Dancing Script" }}
+              >
+                Whether it be home or venue setup it with a theme like your
+                dream...
               </p>
             </div>
           </div>
@@ -40,9 +43,13 @@ const ServicesWeProvide = ({ service1, service2, service3 }) => {
           <div className='content_img'>
             <img src={pic2} className='db image br3' alt='#' />
             <div className='pa2 ph3-ns pb3-ns'>
-              <p className='f4 black' style={{ fontFamily: "Dancing Script" }}>
-                If it fits, i sits burrow under covers. Destroy couch leave hair
-                everywhere, and touch water with paw then recoil in horror.
+              <p
+                className='f4 black ttc'
+                style={{ fontFamily: "Dancing Script" }}
+              >
+                Be it be a date or a anniversary Special moment require a
+                special arrangement We will arrange that special moment for
+                you...
               </p>
             </div>
           </div>
@@ -52,9 +59,13 @@ const ServicesWeProvide = ({ service1, service2, service3 }) => {
           <div className='content_img'>
             <img src={pic3} className='db image br3' alt='#' />
             <div className='pa2 ph3-ns pb3-ns'>
-              <p className='f4 black' style={{ fontFamily: "Dancing Script" }}>
-                If it fits, i sits burrow under covers. Destroy couch leave hair
-                everywhere, and touch water with paw then recoil in horror.
+              <p
+                className='f4 black ttc'
+                style={{ fontFamily: "Dancing Script" }}
+              >
+                Thinking of events at home, but not sure who will cook? And what
+                to cook Relax we will provide you Specialized chef at your
+                doorstep...
               </p>
             </div>
           </div>
