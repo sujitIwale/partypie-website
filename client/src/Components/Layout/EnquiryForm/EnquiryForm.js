@@ -184,6 +184,16 @@ const EnquiryForm = () => {
                 For working with us mail your resume on Same Email .
               </h2>
             </header>
+            <iframe
+              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.190497977852!2d75.85298291479495!3d22.7211597851065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd0aeddcce11%3A0xf7b7e351a956fe3!2sRajwada%2C%20Indore%2C%20Madhya%20Pradesh%20452002!5e0!3m2!1sen!2sin!4v1600017662985!5m2!1sen!2sin'
+              width='530'
+              height='440'
+              frameborder='4'
+              style={{ border: 0 }}
+              allowfullscreen=''
+              aria-hidden='false'
+              tabindex='0'
+            ></iframe>
           </div>
         </div>
       </div>
