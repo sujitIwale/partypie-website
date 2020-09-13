@@ -220,7 +220,7 @@
   [ Input ]*/
   
   .wrap-input100 {
-    width: 100%;
+    width: 450px;
     position: relative;
     border: 1px solid #e6e6e6;
   }
@@ -259,7 +259,7 @@
   
   .input100 {
     display: block;
-    width: 100%;
+    width: 450px;
     background: transparent;
     font-family: Poppins-Regular;
     font-size: 18px;
@@ -476,7 +476,7 @@
   
   
   input {
-    width: 450px !important;
+    width: 450px ;
     background-color: #ffffff !important;
     outline: none;
     border: none;
@@ -486,7 +486,16 @@
 textarea {
   outline: none;
   border: none;
-  width: 450px !important;
+  width: 450px ;
 }
 
+@media (max-width: 450px) {
+  input {
+    width: 300px;
+    
+  }
+  textarea {
+    width: 300px !important;
+  }
   
+}

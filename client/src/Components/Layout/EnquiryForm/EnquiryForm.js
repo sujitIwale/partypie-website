@@ -35,7 +35,7 @@ const EnquiryForm = () => {
               Tell us your name *
             </label>
             <div
-              className='wrap-input100 rs1-wrap-input100 validate-input'
+              className='wrap-input100 validate-input'
               data-validate='Type Your Name'
             >
               <input
@@ -100,7 +100,7 @@ const EnquiryForm = () => {
               Event Venue
             </label>
             <div
-              className='wrap-input100 rs1-wrap-input100 validate-input'
+              className='wrap-input100 validate-input'
               data-validate='Type Venue'
             >
               <input

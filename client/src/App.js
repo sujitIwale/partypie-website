@@ -33,7 +33,7 @@ const App = () => {
               overflow: "scroll",
             }}
           >
-            {state.scrollTop > 0.1 ? <Header /> : <Navbar />}
+            {state.scrollTop > 1 ? <Header /> : <Navbar />}
             <div style={{ marginTop: "56px" }}></div>
             <Switch>
               <Route exact path='/' component={Home} />
