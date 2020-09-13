@@ -2,6 +2,7 @@ import React from "react";
 import logo from "./logo.png";
 import PropTypes from "prop-types";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 const Navbar = ({ title }) => {
   return (
@@ -43,7 +44,7 @@ const Navbar = ({ title }) => {
           </a>
           <a
             className='link dim dark-gray f5 f4-l dib'
-            href='/'
+            href='/about'
             title='aboutUs'
           >
             About Us

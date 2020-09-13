@@ -15,19 +15,15 @@ const Enquiries = mongoose.Schema({
   },
   eventDate: {
     type: String,
-    required: true,
   },
   eventType: {
     type: String,
-    required: true,
   },
   eventVenue: {
     type: String,
-    required: true,
   },
   eventDesc: {
     type: String,
-    required: true,
   },
   date: {
     type: Date,

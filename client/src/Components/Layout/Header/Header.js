@@ -43,12 +43,17 @@ const Header = ({ title }) => {
             Contact Us
           </a>
           <a
-            className='link dim dark-gray f5 f4-l dib'
-            href='/'
+            className='link dim dark-gray f5 f4-l dib mr3 mr4-l'
             title='About Us'
           >
-            About Us
-          </a>
+            <a
+              className='link dim dark-gray f5 f4-l dib'
+              href='/about'
+              title='aboutUs'
+            >
+              About Us
+            </a>
+          </a>{" "}
         </div>
       </nav>
     </div>
