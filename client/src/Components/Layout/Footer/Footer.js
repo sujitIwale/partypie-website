@@ -7,25 +7,37 @@ const Footer = () => {
       <footer className='tc ma4 footer'>
         <div>
           <a
-            className='icon pointer fa-instagram f2 ma3 black link instagram'
+            style={{ textDecoration: "none" }}
             href='https://www.instagram.com/partypie_crew/'
             target='_blank'
-          ></a>
+            rel='noopener noreferrer'
+          >
+            <span className='icon pointer fa-instagram f2 ma3 black link instagram'></span>{" "}
+          </a>
           <a
-            className='icon pointer fa-facebook f2  ma3 black facebook'
+            style={{ textDecoration: "none" }}
             href='https://www.facebook.com/Partypiecrew/'
             target='_blank'
-          ></a>
+            rel='noopener noreferrer'
+          >
+            <span className='icon pointer fa-facebook f2  ma3 black facebook'></span>{" "}
+          </a>
           <a
-            className='icon pointer fa-twitter f2  ma3 black twitter'
+            style={{ textDecoration: "none" }}
             href=' https://twitter.com/Partypie_Crew'
             target='_blank'
-          ></a>
+            rel='noopener noreferrer'
+          >
+            <span className='icon pointer fa-twitter f2  ma3 black twitter'></span>{" "}
+          </a>
           <a
-            className='icon pointer fa-graduation-cap f2  ma3 black envelope'
+            style={{ textDecoration: "none" }}
             href='mailto:partypiecrew@gmail.com ?subject=subject Text'
             target='_blank'
-          ></a>
+            rel='noopener noreferrer'
+          >
+            <span className='icon pointer fa-graduation-cap f2  ma3 black envelope'></span>{" "}
+          </a>
           <hr className='w-70 center bg-black' />
           <span className='icon pointer fa-copyright f6 ma3 black ttc '>
             {" "}
