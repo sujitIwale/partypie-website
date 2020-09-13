@@ -22,9 +22,12 @@ const Section = ({ tagLine }) => {
                 Our clients.
               </h4>
               <br />
-              <p className='f4 link pt3 bg-animate hover-bg-black hover-white w-30 br-pill ba bw1 ph3 pv2 mb2 dib near-black tc'>
+              <a
+                href='#section2'
+                className='f4-ns f5 link pt3 bg-animate hover-bg-black hover-white w-50 br-pill ba bw1 ph3 pv2 mb2 dib near-black tc'
+              >
                 Learn More.
-              </p>
+              </a>
             </div>
             <div className=' order-2 order-2-ns mb4 mb0-ns w-100 w-60-ns'>
               {/* <img src={background} alt='background illustration' /> */}

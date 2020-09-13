@@ -1,13 +1,14 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/Layout/Header/Header";
 import Navbar from "./Components/Layout/Navbar/Navbar";
 import Auth from "./Components/Pages/Admin/Auth";
-import Home from "./Components/Pages/Home";
+import Home from "./Components/Pages/Home/Home";
 import AdminState from "./context/Admin/AdminState";
 import EnquiryState from "./context/Enquiry/EnquiryState";
 import AdminPage from "./Components/Pages/Admin/AdminPage/AdminPage";
+import About from "./Components/Pages/About/About";
 
 const App = () => {
   const myRef = React.createRef();
@@ -24,21 +25,16 @@ const App = () => {
     <AdminState>
       <EnquiryState>
         <Router>
-          <div
-            ref={myRef}
-            onScroll={onScroll}
-            className='height'
-            style={{
-              height: "46rem",
-              overflow: "scroll",
-            }}
-          >
+          <div ref={myRef} onScroll={onScroll} className='height'>
             {state.scrollTop > 1 ? <Header /> : <Navbar />}
-            <div style={{ marginTop: "56px" }}></div>
+            <div style={{ marginTop: "56px" }}></div>{" "}
             <Switch>
-              <Route exact path='/' component={Home} />
-              <Route exact path='/admin' component={Auth} />
-              <Route exact path='/admin/page' component={AdminPage} />
+              <Fragment>
+                <Route exact path='/' component={Home} />
+                <Route exact path='/admin' component={Auth} />
+                <Route exact path='/admin/page' component={AdminPage} />
+                <Route exact path='/about' component={About} />
+              </Fragment>
             </Switch>
           </div>
         </Router>

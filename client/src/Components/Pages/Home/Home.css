@@ -1,0 +1,10 @@
+html {
+  scroll-behavior: smooth;
+}
+#section1 {
+  height: max-content;
+}
+
+#section2 {
+  height: max-content;
+}

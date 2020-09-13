@@ -36,7 +36,7 @@ const Footer = () => {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <span className='icon pointer fa-graduation-cap f2  ma3 black envelope'></span>{" "}
+            <span className='icon pointer fa-envelope f2  ma3 black envelope'></span>{" "}
           </a>
           <hr className='w-70 center bg-black' />
           <span className='icon pointer fa-copyright f6 ma3 black ttc '>

@@ -28,11 +28,13 @@ const EnquiryForm = () => {
     <div>
       <div className='container-contact100'>
         <div className='wrap-contact100'>
-          <form className='contact100-form validate-form' onSubmit={onSubmit}>
-            <span className='contact100-form-title'>Send Us A Message</span>
+          <form className='contact100-form validate-form'>
+            <span className='contact100-form-title'>
+              Send Us Your Information..
+            </span>
 
             <label className='label-input100' htmlFor='first-name'>
-              Tell us your name *
+              Tell us your name.. *
             </label>
             <div
               className='wrap-input100 validate-input'
@@ -40,16 +42,18 @@ const EnquiryForm = () => {
             >
               <input
                 id='name'
-                className='input100'
+                className='input100 w-100 '
                 type='text'
                 name='name'
-                placeholder='Name'
+                required
+                placeholder='Eg. John Doe'
                 onChange={onChange}
               />
+              <span className='focus-input100'></span>
             </div>
 
             <label className='label-input100' htmlFor='email'>
-              Enter your email *
+              Tell Us Your Email.. *
             </label>
             <div
               className='wrap-input100 validate-input'
@@ -57,9 +61,10 @@ const EnquiryForm = () => {
             >
               <input
                 id='email'
-                className='input100'
+                className='input100 w-100 '
                 type='email'
                 name='email'
+                required
                 placeholder='Eg. example@email.com'
                 onChange={onChange}
               />
@@ -67,37 +72,52 @@ const EnquiryForm = () => {
             </div>
 
             <label className='label-input100' htmlFor='phone'>
-              Enter phone number
+              Tell Us Your Phone Number.. *
             </label>
             <div className='wrap-input100'>
               <input
                 id='phone'
-                className='input100'
+                className='input100 w-100'
                 type='text'
                 name='phone'
-                placeholder='Eg. +1 800 000000'
+                required
+                placeholder='It Should Be 10 Characters. '
                 onChange={onChange}
               />
               <span className='focus-input100'></span>
             </div>
 
             <label className='label-input100' htmlFor='date'>
-              Event Date
+              When's The Event..
             </label>
             <div className='wrap-input100'>
               <input
                 id='date'
-                className='input100'
+                className='input100 w-100'
                 type='date'
                 name='eventDate'
-                placeholder={new Date()}
+                onChange={onChange}
+              />
+              <span className='focus-input100'></span>
+            </div>
+
+            <label className='label-input100' htmlFor='phone'>
+              What's The Event..
+            </label>
+            <div className='wrap-input100'>
+              <input
+                id='text'
+                className='input100 w-100'
+                type='text'
+                name='eventType'
+                placeholder='Eg. Birthday'
                 onChange={onChange}
               />
               <span className='focus-input100'></span>
             </div>
 
             <label className='label-input100' htmlFor='Event Venue'>
-              Event Venue
+              Where's The Event..
             </label>
             <div
               className='wrap-input100 validate-input'
@@ -105,16 +125,17 @@ const EnquiryForm = () => {
             >
               <input
                 id='Venue'
-                className='input100'
+                className='input100 w-100 '
                 type='text'
                 name='eventVenue'
-                placeholder='Enter Venue'
+                placeholder=" If It's Not Decided , Leave it Empty."
                 onChange={onChange}
               />
+              <span className='focus-input100'></span>
             </div>
 
             <label className='label-input100' htmlFor='message'>
-              Event Discription{" "}
+              Could You Tell Us More About The Event..
             </label>
             <div
               className='wrap-input100 validate-input'
@@ -122,7 +143,7 @@ const EnquiryForm = () => {
             >
               <textarea
                 id='description'
-                className='input100'
+                className='input100 w-100'
                 name='eventDesc'
                 placeholder='Write a Event Description'
                 onChange={onChange}
@@ -131,48 +152,38 @@ const EnquiryForm = () => {
             </div>
 
             <div className='container-contact100-form-btn'>
-              <button className='contact100-form-btn'>Send Message</button>
+              <button className='contact100-form-btn' onClick={onSubmit}>
+                Send Message
+              </button>
             </div>
           </form>
 
-          <div className='contact100-more flex-col-c-m'>
-            <div className='flex-w size1 p-b-47'>
-              <div className='txt1 p-r-25'>
-                <span className='lnr lnr-map-marker'></span>
-              </div>
-
-              <div className='flex-col size2'>
-                <span className='txt1 p-b-20'>Address</span>
-
-                <span className='txt2'>
-                  Mada Center 8th floor, 379 Hudson St, New York, NY 10018 US
-                </span>
-              </div>
-            </div>
-
-            <div className='dis-flex size1 p-b-47'>
-              <div className='txt1 p-r-25'>
-                <span className='lnr lnr-phone-handset'></span>
-              </div>
-
-              <div className='flex-col size2'>
-                <span className='txt1 p-b-20'>Lets Talk</span>
-
-                <span className='txt3'>+1 800 1236879</span>
-              </div>
-            </div>
-
-            <div className='dis-flex size1 p-b-47'>
-              <div className='txt1 p-r-25'>
-                <span className='lnr lnr-envelope'></span>
-              </div>
-
-              <div className='flex-col size2'>
-                <span className='txt1 p-b-20'>General Support</span>
-
-                <span className='txt3'>contact@example.com</span>
-              </div>
-            </div>
+          <div className='contact100-more bflex-col-c-m '>
+            <header className='tc ph4 bg-white pa5-ns pa2 ma5-ns ml2 mr2 mt0 mb2 br4 ttc'>
+              <h1
+                className='f2 f2-m f1-l fw2 black-90 mv3'
+                style={{ fontFamily: "Lobster" }}
+              >
+                Want to know more about us
+              </h1>
+              <h2 className='f3 f4-m f3-l fw2 black-50 mt0 lh-copy'>
+                Contact Us -
+              </h2>
+              <h2 className='f3 f4-m f3-l fw2 black-50 mt0 lh-copy'>
+                Mail us{" "}
+                <a href='mailto:partypiecrew@gmail.com' className='blue'>
+                  here
+                </a>
+                .
+              </h2>
+              <h2 className='f3 f4-m f3-l fw2 black-50 mt0 lh-copy'>Or</h2>
+              <h2 className='f3 f4-m f3-l fw2 black-50 mt0 lh-copy'>
+                call us on 9082348446.
+              </h2>
+              <h2 className='f3 f4-m f3-l fw2 black-50 mt0 lh-copy'>
+                For working with us mail your resume on Same Email .
+              </h2>
+            </header>
           </div>
         </div>
       </div>

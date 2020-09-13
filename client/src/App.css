@@ -1,6 +1,16 @@
 @charset "UTF-8";
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600";
 
+.height {
+  height: 46rem;
+  overflow: scroll;
+}
+
+@media only screen and (max-width: 426px) {
+  .height {
+    height: 50rem;
+  }
+}
 .color {
   color: blue !important;
 }
@@ -594,7 +604,6 @@ header h6 + p {
   }
 }
 
-
 .box {
   border: solid 1px #dbdbdb;
   margin-bottom: 2em;
@@ -955,8 +964,6 @@ table.alt tfoot {
 }
 
 /* Button */
-
-
 
 @media screen and (max-width: 480px) {
   input[type="submit"],

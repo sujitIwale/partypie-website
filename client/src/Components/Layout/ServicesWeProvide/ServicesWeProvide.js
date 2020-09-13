@@ -13,10 +13,10 @@ const ServicesWeProvide = ({ service1, service2, service3 }) => {
     >
       <div>
         <h1
-          className='ttc tc f1 f1-ns b pa1 ma1'
-          style={{ fontFamily: "Dancing Script" }}
+          className='ttc tc f1 f1-ns b pa1 ma1 black head'
+          style={{ fontFamily: "Lobster" }}
         >
-          <strong>Services we Provide.</strong>
+          <strong className='black'>Services we Provide.</strong>
         </h1>
       </div>
       <div

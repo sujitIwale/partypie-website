@@ -1,9 +1,10 @@
 import React, { Component } from "react";
-import Footer from "../Layout/Footer/Footer";
-import Section from "../Layout/Section/Section";
-import About from "../Layout/About/About";
-import EnquiryForm from "../Layout/EnquiryForm/EnquiryForm";
-import ServicesWeProvide from "../Layout/ServicesWeProvide/ServicesWeProvide";
+import "./Home.css";
+import Footer from "../../Layout/Footer/Footer";
+import Section from "../../Layout/Section/Section";
+import About from "../../Layout/About/About";
+import EnquiryForm from "../../Layout/EnquiryForm/EnquiryForm";
+import ServicesWeProvide from "../../Layout/ServicesWeProvide/ServicesWeProvide";
 
 class Home extends Component {
   constructor() {
@@ -23,8 +24,12 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <Section />
-        <ServicesWeProvide />
+        <div id='section1'>
+          <Section />
+        </div>
+        <div id='section2'>
+          <ServicesWeProvide />
+        </div>
         <EnquiryForm />
         <About />
         <Footer />
