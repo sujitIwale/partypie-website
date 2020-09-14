@@ -23,16 +23,15 @@ class Home extends Component {
 
   render() {
     return (
-      <div>
+      <div className='main'>
         <div id='section1'>
           <Section />
         </div>
         <div id='section2'>
           <ServicesWeProvide />
         </div>
-        <EnquiryForm />
         <About />
-        <Footer />
+        <EnquiryForm />
       </div>
     );
   }

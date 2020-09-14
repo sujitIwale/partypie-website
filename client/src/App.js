@@ -9,6 +9,7 @@ import AdminState from "./context/Admin/AdminState";
 import EnquiryState from "./context/Enquiry/EnquiryState";
 import AdminPage from "./Components/Pages/Admin/AdminPage/AdminPage";
 import About from "./Components/Pages/About/About";
+import Footer from "./Components/Layout/Footer/Footer";
 
 const App = () => {
   const myRef = React.createRef();
@@ -36,6 +37,7 @@ const App = () => {
                 <Route exact path='/about' component={About} />
               </Fragment>
             </Switch>
+            <Footer />
           </div>
         </Router>
       </EnquiryState>
