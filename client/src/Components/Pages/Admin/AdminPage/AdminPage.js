@@ -1,42 +1,61 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import EnquiryContext from '../../../../context/Enquiry/EnquiryContext'
 
 const AdminPage = () => {
     const enquiryContext = useContext(EnquiryContext);
     const {getEnquiries,Enquiries} = enquiryContext;
 
-    const seeEnquiries = (e) => { 
-          e.preventDefault()
-         getEnquiries()
-         console.log('hello')
-    }
+    
+    useEffect(() =>{
+      getEnquiries()
+    })
     return (
-        <div className='' style={{marginTop:'200px'}}>
-            <input type='submit' className='b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib pointer'
-                value='See the enquiries' onClick={seeEnquiries} />
+        <div className='' style={{marginTop:''}}>
+           
 
                 
             {
                 Enquiries && Enquiries.map(enquiry =>(
-                  <div className='flex'>
-                  <div class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center">
-                    <div class="pa2 ph3-ns pb3-ns">
-                      <div class="dt w-100 mt1">
-                        <div class="dtc">
-                          <h1 class="f5 f4-ns mv0">{enquiry.eventType} </h1>
+                  <div>
+                  <section class="ph3 ph5-ns pv5">
+                  <article class="mw8 center br2 ba b--light-blue bg-lightest-blue">
+                    <div class="dt-ns dt--fixed-ns">
+                      <div class="pa3 pa4-ns dtc-ns v-mid">
+                        <div>
+                         <h2 class="fw4 blue mt0 mb3" style={{fontFamily:'serif'}}>
+                         <span className='red'>Name:</span> {enquiry.name}
+                         </h2>
+                         <h2 class="fw4 blue mt0 mb3" style={{fontFamily:'serif'}}>
+                         <span className='red'>Email:</span> {enquiry.email} 
+                         </h2>
+                         <h2 class="fw4 blue mt0 mb3" style={{fontFamily:'serif'}}>
+                         <span className='red'>Phone:</span> {enquiry.phone}
+                         </h2>
+                         <h2 class="fw4 blue mt0 mb3" style={{fontFamily:'serif'}}>
+                         <span className='red'>Event:</span> {enquiry.eventType}
+                         </h2>
+                         <h2 class="fw4 blue mt0 mb3" style={{fontFamily:'serif'}}>
+                         <span className='red'>Event Date:</span> {enquiry.eventDate}
+                         </h2>
+                         <h2 class="fw4 blue mt0 mb3" style={{fontFamily:'serif'}}>
+                         <span className='red'>Event Venue:</span> {enquiry.eventVenue}
+                         </h2>
+                          <h2 class="fw4 red mt0 mb3" style={{fontFamily:'serif'}}>Event Description :
+                          <span class="black-70 measure lh-copy mv0">
+                            {enquiry.eventDesc}
+                          </span>
+                          </h2>
+                         
                         </div>
                       </div>
-                     Name: <h2 className='black'>{enquiry.name}</h2>
-                     Email: <h2 className='black'>{enquiry.email}</h2>
-                     Phone: <h2 className='black'>{enquiry.phone}</h2>
-                     Date: <h2 className='black'>{enquiry.eventDate}</h2>
-                     Venue: <h2 className='black'>{enquiry.eventVenue}</h2>
-                     Description:<br/>
-                      <p class="f6 lh-copy measure mt2 mid-gray">
-                        {enquiry.eventDesc}
-                      </p>
+                      <div class="pa3 pa4-ns dtc-ns v-mid">
+                        <a href="#"  class="no-underline f6 tc db w-100 pv3 bg-animate bg-blue hover-bg-dark-blue white br2">
+                            <label style={{fontFamily:'serif'}}>Respond</label></a>
+                      </div>
                     </div>
-                  </div>
+                  </article>
+                </section>
+
                   </div>
 
                    
