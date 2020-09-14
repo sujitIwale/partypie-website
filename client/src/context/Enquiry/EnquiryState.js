@@ -9,7 +9,7 @@ import {
 
 const EnquiryState = (props) => {
     const initialState = {
-        Enquiry : null,
+        Enquiry : {enquiryStatus:false},
         Enquiries:null
     }
     
@@ -27,9 +27,6 @@ const EnquiryState = (props) => {
             }
              const res = await axios.post('http://localhost:5000/api/addenquiries' , enquiry,config)
              console.log(res)
-             if (res) {
-                 alert('enquiry send')
-             }
              dispatch({type:SUBMIT_ENQUIRY,payload:res.data})
         } catch (error) {
             if(error) {

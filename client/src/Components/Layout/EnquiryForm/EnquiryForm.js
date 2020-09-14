@@ -2,12 +2,13 @@ import React, { useContext, useState } from "react";
 import "./EnquiryForm.css";
 import EnquiryContext from "../../../context/Enquiry/EnquiryContext";
 
+
 const EnquiryForm = () => {
   const enquiryContext = useContext(EnquiryContext);
 
-  const { submitEnquiry } = enquiryContext;
+  const { submitEnquiry,Enquiry } = enquiryContext;
 
-  const [Enquiry, setEnquiry] = useState({
+  const [enquiry, setEnquiry] = useState({
     name: "",
     email: "",
     phone: "",
@@ -17,12 +18,12 @@ const EnquiryForm = () => {
     eventVenue: "",
   });
   const onChange = (e) => {
-    setEnquiry({ ...Enquiry, [e.target.name]: e.target.value });
+    setEnquiry({ ...enquiry, [e.target.name]: e.target.value });
   };
 
   const onSubmit = (e) => {
     e.preventDefault();
-    submitEnquiry(Enquiry);
+    submitEnquiry(enquiry);
   };
   return (
     <div>
@@ -151,11 +152,21 @@ const EnquiryForm = () => {
               <span className='focus-input100'></span>
             </div>
 
-            <div className='container-contact100-form-btn'>
-              <button className='contact100-form-btn' onClick={onSubmit}>
-                Send Message
+            {
+              Enquiry.enquiryStatus ? 
+              <div className='btn b--light-green bg-lightest-green'>
+              <button className='contact100-form-btn ' onClick={onSubmit}>
+              Enquiry Submitted Successfully
               </button>
             </div>
+            :
+            <div className='container-contact100-form-btn'>
+              <button className='contact100-form-btn' onClick={onSubmit}>
+              Send Message 
+              </button>
+            </div>
+            
+            }
           </form>
 
           <div className='contact100-more bflex-col-c-m '>
