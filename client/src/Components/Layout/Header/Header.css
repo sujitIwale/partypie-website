@@ -15,14 +15,14 @@ h1 {
   color: black;
 }
 .logo {
-  margin-top: 5px !important;
+  margin-top: 10px !important;
 }
 .fixed-header {
   position: fixed;
   background-color: white;
   color: black !important;
   width: 99%;
-  height: 70px;
+  height: 90px;
   z-index: 100 !important ;
 }
 
@@ -34,7 +34,7 @@ h1 {
 
 @media only screen and (max-width: 426px) {
   .fixed-header {
-    height: 93px;
+    height: 150px;
     width: 100%;
     top: 0;
   }

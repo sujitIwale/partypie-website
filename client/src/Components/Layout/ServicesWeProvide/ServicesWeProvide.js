@@ -8,7 +8,7 @@ import "./Services.css";
 const ServicesWeProvide = ({ service1, service2, service3 }) => {
   return (
     <div
-      className='pa5-ns pt5 mt5 ma5-ns br4'
+      className='pa5-ns mt5-ns ma5-ns br4'
       style={{ backgroundColor: "whitesmoke" }}
     >
       <div>

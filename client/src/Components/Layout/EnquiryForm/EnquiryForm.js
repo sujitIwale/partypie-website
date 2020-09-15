@@ -1,12 +1,26 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import "./EnquiryForm.css";
 import EnquiryContext from "../../../context/Enquiry/EnquiryContext";
-
 
 const EnquiryForm = () => {
   const enquiryContext = useContext(EnquiryContext);
 
-  const { submitEnquiry,Enquiry } = enquiryContext;
+  const { submitEnquiry, Enquiry } = enquiryContext;
+  useEffect(() => {
+    if (Enquiry !== null) {
+      setEnquiry(Enquiry);
+    } else {
+      setEnquiry({
+        name: "",
+        email: "",
+        phone: "",
+        eventDate: "",
+        eventType: "",
+        eventDesc: "",
+        eventVenue: "",
+      });
+    }
+  }, [EnquiryContext, Enquiry]);
 
   const [enquiry, setEnquiry] = useState({
     name: "",
@@ -22,6 +36,15 @@ const EnquiryForm = () => {
   };
 
   const onSubmit = (e) => {
+    setEnquiry({
+      name: "",
+      email: "",
+      phone: "",
+      eventDate: "",
+      eventType: "",
+      eventDesc: "",
+      eventVenue: "",
+    });
     e.preventDefault();
     submitEnquiry(enquiry);
   };
@@ -29,7 +52,7 @@ const EnquiryForm = () => {
     <div>
       <div className='container-contact100'>
         <div className='wrap-contact100'>
-          <form className='contact100-form validate-form'>
+          <form className='contact100-form validate-form' onSubmit={onSubmit}>
             <span className='contact100-form-title'>
               Send Us Your Information..
             </span>
@@ -151,22 +174,18 @@ const EnquiryForm = () => {
               ></textarea>
               <span className='focus-input100'></span>
             </div>
-
-            {
-              Enquiry.enquiryStatus ? 
+            {Enquiry.enquiryStatus && (
               <div className='btn b--light-green bg-lightest-green'>
-              <button className='contact100-form-btn ' onClick={onSubmit}>
-              Enquiry Submitted Successfully
-              </button>
-            </div>
-            :
+                <p className='contact100-form-btn '>
+                  Enquiry Submitted Successfully
+                </p>
+              </div>
+            )}
             <div className='container-contact100-form-btn'>
               <button className='contact100-form-btn' onClick={onSubmit}>
-              Send Message 
+                Send Message
               </button>
             </div>
-            
-            }
           </form>
 
           <div className='contact100-more bflex-col-c-m '>

@@ -2,26 +2,24 @@ import React from "react";
 import logo from "./logo.png";
 import PropTypes from "prop-types";
 import "./Navbar.css";
-import { Link } from "react-router-dom";
 
 const Navbar = ({ title }) => {
   return (
     <div className='navbar'>
       <nav className='dt-l w-100 ph5-l h7'>
-        <div className='w-100 pt1 tc'>
+        <div className='w-100 pt2 tc'>
           <a className='tc' href='/'>
             <img src={logo} alt={title} width='150px' height='55px' />
           </a>
         </div>
         <div className='db dtc-l v-mid w-100 w-75-l tc tr-l'>
           <a
-            className='link dim dark-gray f5 f4-l dib mr3 mr4-l'
+            className='link br-pill hover-white hover-bg-black dark-gray pa3 f5 f4-l dib mr4 mr5-l'
             href='/'
-            title='Home'
           >
             Home
           </a>
-          <a
+          {/* <a
             className='link dim dark-gray f5 f4-l dib mr3 mr4-l'
             href='/'
             title='How it Works'
@@ -41,11 +39,10 @@ const Navbar = ({ title }) => {
             title='contactUs'
           >
             Contact Us
-          </a>
+          </a> */}
           <a
-            className='link dim dark-gray f5 f4-l dib'
+            className='link br-pill hover-white hover-bg-black pa3 mb2 mt2 dark-gray f5 f4-l dib'
             href='/about'
-            title='aboutUs'
           >
             About Us
           </a>

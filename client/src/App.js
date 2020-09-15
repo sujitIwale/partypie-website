@@ -9,6 +9,7 @@ import AdminState from "./context/Admin/AdminState";
 import EnquiryState from "./context/Enquiry/EnquiryState";
 import AdminPage from "./Components/Pages/Admin/AdminPage/AdminPage";
 import About from "./Components/Pages/About/About";
+import Footer from "./Components/Layout/Footer/Footer";
 
 const App = () => {
   const myRef = React.createRef();
@@ -27,7 +28,7 @@ const App = () => {
         <Router>
           <div ref={myRef} onScroll={onScroll} className='height'>
             {state.scrollTop > 1 ? <Header /> : <Navbar />}
-            <div style={{ marginTop: "56px" }}></div>{" "}
+
             <Switch>
               <Fragment>
                 <Route exact path='/' component={Home} />
@@ -36,6 +37,7 @@ const App = () => {
                 <Route exact path='/about' component={About} />
               </Fragment>
             </Switch>
+            <Footer />
           </div>
         </Router>
       </EnquiryState>

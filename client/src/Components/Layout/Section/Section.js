@@ -1,20 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
-// import background from "./background.png";
 import { ReactComponent as Reactsvg } from "./logo.svg";
 import "./Section.css";
 
 const Section = ({ tagLine }) => {
   return (
     <div>
-      <div className='mt5' />
       <section style={{ zIndex: "1" }}>
-        <article className='pa4 ba b--black-10 shadow-5 article'>
+        <article className='pa4-ns pa0 ba b--black-10 shadow-5 article'>
           <div className='flex flex-column flex-row-ns'>
             <div className='w-100 w-40-ns pa0 order-1 order-1-ns tc'>
-              <h1 className='f1 ma4-ns tc'>{tagLine}</h1>
+              <h1 className='f1-ns f2 ma4-ns ma1 tc'>{tagLine}</h1>
               <br />
-              <h4 className='tc ttc'>
+              <h4 className='tc f3 pa1 ttc'>
                 <strong>
                   <b>PartyPie</b>
                 </strong>{" "}

@@ -2,15 +2,16 @@
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600";
 
 .height {
-  height: 46rem;
+  height: 42rem;
   overflow: scroll;
 }
 
 @media only screen and (max-width: 426px) {
   .height {
-    height: 50rem;
+    height: 40rem;
   }
 }
+
 .color {
   color: blue !important;
 }
