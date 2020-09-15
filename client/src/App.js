@@ -28,7 +28,7 @@ const App = () => {
         <Router>
           <div ref={myRef} onScroll={onScroll} className='height'>
             {state.scrollTop > 1 ? <Header /> : <Navbar />}
-            <div style={{ marginTop: "56px" }}></div>{" "}
+
             <Switch>
               <Fragment>
                 <Route exact path='/' component={Home} />

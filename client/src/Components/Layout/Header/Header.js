@@ -15,13 +15,12 @@ const Header = ({ title }) => {
         </div>
         <div className='db dtc-l v-mid w-100 w-75-l tc tr-l pt0 '>
           <a
-            className='link dim dark-gray f5 f4-l dib mr3 mr4-l'
+            className='link br-pill hover-white hover-bg-black dark-gray pa3 f5 f4-l dib mr4 mr5-l'
             href='/'
-            title='Home'
           >
             Home
           </a>
-          <a
+          {/* <a
             className='link dim dark-gray f5 f4-l dib mr3 mr4-l'
             href='/'
             title='How it Works'
@@ -42,18 +41,13 @@ const Header = ({ title }) => {
           >
             Contact Us
           </a>
+           */}
           <a
-            className='link dim dark-gray f5 f4-l dib mr3 mr4-l'
-            title='About Us'
+            className='link br-pill hover-white hover-bg-black dark-gray pa3 mb2 mt2 f5 f4-l dib'
+            href='/about'
           >
-            <a
-              className='link dim dark-gray f5 f4-l dib'
-              href='/about'
-              title='aboutUs'
-            >
-              About Us
-            </a>
-          </a>{" "}
+            About Us
+          </a>
         </div>
       </nav>
     </div>
